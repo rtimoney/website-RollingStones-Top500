@@ -1,0 +1,414 @@
+
+#headernavbar{
+    display: none;
+}
+
+
+
+body{
+    font-family: 'Trebuchet MS';
+    background-color: #DC1A22;
+    color: white;
+    
+}
+
+.header{
+    font-size: larger;
+
+}
+
+.nav>li {
+    display: inline-block;
+}
+
+.dropdown {
+    display: inline-block;
+}
+.dropdown-toggle {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: inline-block;
+}
+
+
+
+hr{ height: 2px;
+    background-color: grey;
+    border: none;}
+
+a{
+    color: black;
+    font-weight: bold;
+}
+a:hover{ 
+    color: white;
+    font-weight: bold;
+}
+
+
+
+table, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-width: thick;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-width: thick;
+}
+
+table{
+    width: 90%;
+}
+
+
+
+
+/* navbar styling start */ 
+
+ul {
+    padding: 0;
+    list-style: none;
+    background: #DC1A22;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+ul li a {
+    display: block;
+    padding: 8px 25px;
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover {
+
+    color: white;
+    background: grey;
+}
+ul li ul.dropdown {
+    min-width: 100%; /* Set the width of the dropdown */
+    background:#DC1A22;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.dropdown {
+    display: block; /* reveal the hidden dropdown */
+}
+ul li ul.dropdown li {
+    display: block;
+}
+
+/* navbar styling end */ 
+
+
+#loginInputs {
+    text-align: center;
+  
+} 
+
+
+input{
+    width: 25%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+
+    .headerLogoDiv{
+        width:100%;
+        display:grid;
+        place-content:center;
+      }
+    
+      .dataDiv{
+        display:grid;
+        place-content:center;
+      }
+  
+
+
+/* DC1A22;  shade of red used */
+
+#centred_p{
+    text-align:center;
+}
+
+
+
+
+#album_title_align{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#wikitext{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+#spotifyalign{
+    border-radius: 12px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;}
+
+
+  #thumbnail{
+      width: 35%;
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
+
+  .thumbnail{
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+
+.appButton{
+    color: white;
+    background: green;
+    
+}
+
+.denyButton{
+    color: white;
+    background: red;
+    
+}
+
+.a_button_app {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: white;
+    background: green;
+}
+
+.a_button_deny {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: white;
+    background: red;
+}
+
+.navbar-collapse-5{
+    color: blue;
+}
+
+.left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+@media only screen and (min-width: 801px) {
+
+    
+
+    #narrowbody{    
+        margin-left: 5%;
+        margin-right: 5%;}
+
+        
+
+
+
+    #headernavbar{
+        display: block;
+    }
+
+    #mobile{
+        display: none;
+    }
+
+    #headernavbarshow{
+        display: none;
+    }
+
+    
+.album_rank_number{
+    all: initial;
+    background-color: rgb(18 18 18);
+    color: rgb(255, 255, 255);
+    padding: 3rem 4rem;
+    font-size: 1.75rem;
+    text-align: initial !important;
+    margin: 20px;
+    font-family: 'Trebuchet MS';
+    float: left;
+}
+
+.album_rating_number{
+    all: initial;
+    background-color: rgb(18 18 18);
+    color: rgb(255, 255, 255);
+    padding: 3rem 4rem;
+    font-size: 1.75rem;
+    text-align: initial !important;
+    margin: 20px;
+    font-family: 'Trebuchet MS';
+    float: right;
+}
+
+#row{
+    display: flex;
+}
+
+#row input {
+width: 50%;
+}
+
+#halfcolumn{
+    flex: 50%;
+    padding: 10px;
+   /* height: 300px; */
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #marginleft{
+      margin-left: 5%;
+  }
+
+  select{
+    padding: 1%;
+}
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+    body{
+        max-width: 100%;
+        font-size: small;
+    }
+
+    table{
+        width: 100%;
+    }
+    
+
+    
+        #headernavbar{
+            display: none;
+        }
+
+        #spacerforAlbum{display: none;}
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:100%;
+        }
+
+        h1{
+            font-size: large;
+        }
+
+        input{
+            width: 90%;
+        }
+
+        .thumbnail{
+            width: 75%;
+        }
+
+        button{
+            width: 90%;
+            background: grey;
+            color: white;
+            font-style: bold;
+        }
+
+
+        .album_rank_number{
+            all: initial;
+            background-color: rgb(18 18 18);
+            color: rgb(255, 255, 255);
+            font-size: medium;
+            padding: 5%;
+            text-align: center;
+            margin: 20px;
+            font-family: 'Trebuchet MS';
+            display: block;
+        }
+        
+        .album_rating_number{
+            all: initial;
+            background-color: gray;
+            color: rgb(255, 255, 255);
+            padding: 5%;
+            font-size: small;
+            text-align: center;
+            margin: 20px;
+            font-family: 'Trebuchet MS';
+            display: block;
+        }
+
+        #spotifyalign{
+            width: 100%;
+        margin: 0%;
+        }
+
+        select{
+            padding: 2.5%;
+            width: 90%;
+        }
+
+
+
+
+
+
+    }
+    

@@ -1,0 +1,8 @@
+cd /c/users/ronan/downloads
+git clone git@github.com:rtimoney/website-RollingStones-Top500.git
+
+cd /c/users/ronan/downloads/website-RollingStones-Top500
+git init -b main
+git add .
+git commit -m "First upload 17th July 2023 - Ronan"
+git push 

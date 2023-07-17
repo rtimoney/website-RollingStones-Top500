@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+
+<form action="" action="" method="post">
+
+                                                                                                                  
+<div>
+  <label><a>Edit User Email:</a></label>
+  <br><br>
+  <input type="text" name="email"  value="<?php echo $email?>"/>
+</div> 
+
+<input type="submit"  value="CHANGE">
+
+</form><hr><br>
+
+
+<?php
+if(isset($_REQUEST['email'])) {
+
+$newemail = stripslashes($_REQUEST['email']);
+$newemail = mysqli_real_escape_string($conn, $newemail);
+
+$results = ("UPDATE user SET user_email='$newemail' WHERE user_id='$user_id'");   
+
+$resultsRun = $conn->query($results); 
+
+if($resultsRun){  if($resultsRun){
+$dataUpdated='User Email';
+refreshButton($dataUpdated);
+}}}?>

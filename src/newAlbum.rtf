@@ -1,0 +1,90 @@
+The Eminem Show
+1
+2003
+Hip Hop
+Hip Hop
+Eminem
+https://m.media-amazon.com/images/I/71n0xmxpw7L._AC_SX355_.jpg
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2cWBwpqMsDJC1ZUwz813lo?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+
+
+ALTER TABLE album
+ADD CONSTRAINT FK_album_year FOREIGN KEY (album_year)
+    REFERENCES release_year(year_id);
+
+
+    ALTER TABLE new_table
+ADD CONSTRAINT FK_album_year FOREIGN KEY (album_year)
+    REFERENCES release_year(year_id);
+
+    ALTER TABLE new_table
+ADD CONSTRAINT FK_album_artist FOREIGN KEY (album_artist)
+    REFERENCES artist(artist_id);
+
+
+CREATE TABLE album LIKE new_table;
+
+    INSERT INTO new_table SELECT * FROM album;
+
+
+
+
+
+    ALTER TABLE album_genre
+ADD CONSTRAINT FK_albumgenre_album FOREIGN KEY (album_id)
+    REFERENCES album(album_id);
+    ALTER TABLE album_genre
+ADD CONSTRAINT FK_albumgenre_genre FOREIGN KEY (genre_id)
+    REFERENCES genre(genre_id);
+
+
+ ALTER TABLE album_subgenre
+ADD CONSTRAINT FK_albumsubgenre_album FOREIGN KEY (album_id)
+    REFERENCES album(album_id);
+ALTER TABLE album_subgenre
+ADD CONSTRAINT FK_albumgenre_subgenre FOREIGN KEY (subgenre_id)
+    REFERENCES subgenre(subgenre_id);
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+CREATE TABLE album_genre1 LIKE album_genre;
+INSERT INTO album_genre1 SELECT * FROM album_genre;
+ALTER TABLE album_genre1
+ADD CONSTRAINT FK_albumgenre_albumid FOREIGN KEY (album_id)
+    REFERENCES album(album_id);
+    ALTER TABLE album_genre1
+ADD CONSTRAINT FK_albumgenre_genreid FOREIGN KEY (genre_id)
+    REFERENCES genre(genre_id);
+
+
+    CREATE TABLE album_subgenre1 LIKE album_subgenre;
+INSERT INTO album_subgenre1 SELECT * FROM album_subgenre;
+ALTER TABLE album_subgenre1
+ADD CONSTRAINT FK_albumsubgenre_albumid FOREIGN KEY (album_id)
+    REFERENCES album(album_id);
+    ALTER TABLE album_subgenre1
+ADD CONSTRAINT FK_albumsubgenre_genreid FOREIGN KEY (subgenre_id)
+    REFERENCES subgenre(subgenre_id);
+
+
+    CREATE TABLE album_genre LIKE album_genre1;
+INSERT INTO album_genre SELECT * FROM album_genre1;
+CREATE TABLE album_subgenre LIKE album_subgenre1;
+INSERT INTO album_subgenre SELECT * FROM album_subgenre1;
+
