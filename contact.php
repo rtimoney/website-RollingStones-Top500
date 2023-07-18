@@ -15,7 +15,7 @@
 <h1>Welcome to 500 Greatest Explored Contact Page</h1>
 <h2>here we will discuss some of the ways in which you can contact the team :) </h2>
 
-
+ 
 
 <p>
     <div id=centred_p>
