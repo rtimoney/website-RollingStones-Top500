@@ -104,6 +104,6 @@ function displayForReviewed(){
 
 
 
-// INSERT INTO `role` (`role_id`, `role_name`, `role_description`) VALUES (NULL, 'admin', 'Site admin');
+// INSERT INTO `role` (`role_id`, `role_name`, `role_description`) VALUES (NULL, 'admin', 'Site admin');   
 
 ?>
