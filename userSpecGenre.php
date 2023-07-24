@@ -30,7 +30,7 @@ if(!isset($_SESSION['id']))
 	{header("location:login.php");
 	}
 
-// release_year.album_release_year 
+// release_year.album_release_year  
 $query = "SELECT DISTINCT genre_name FROM genre ORDER BY genre_name"; 
 $endpoint = "http://rtimoney02.webhosting6.eeecs.qub.ac.uk/project500ForServer/functions/api.php?custom&query=".urlencode($query);
 $resource = file_get_contents($endpoint);
